@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="description" content="Angel, a Biochemistry graduate building a career in cybersecurity.">
+<title>Contact | Angel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Public+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="logo" href="index.html">A<span>.</span></a>
+<nav aria-label="Main"><ul>
+<li><a href="index.html"  >Home</a></li>
+<li><a href="about.html"  >About</a></li>
+<li><a href="contact.html" aria-current="page" >Contact</a></li>
+</ul></nav>
+<a class="btn" href="contact.html">Let's talk</a>
+</div></header>
+<main>
+<div class="wrap page-title">
+<h1>Contact me</h1>
+<p>Open to internships, entry-level security roles, and conversations with people in the field.</p>
+</div>
+<div class="wrap"><section class="grid2">
+<form id="contact-form" novalidate>
+<label>Your name<input type="text" id="name" required autocomplete="name"></label>
+<label>Your email<input type="email" id="email" required autocomplete="email"></label>
+<label>Message<textarea id="message" required></textarea></label>
+<button class="btn" type="submit">Send message</button>
+<p id="status" role="status"></p>
+</form>
+<div>
+<h2>Other ways to reach me</h2>
+<ul class="contact-list">
+<li><span>Email</span><a href="mailto:your.email@example.com">your.email@example.com</a></li>
+<li><span>LinkedIn</span><a href="https://www.linkedin.com/" rel="noopener">linkedin.com/in/your-profile</a></li>
+<li><span>Location</span>Nigeria</li>
+</ul>
+</div>
+</section></div>
+<script src="script.js"></script>
+</main>
+<footer><div class="wrap">&copy; 2026 Angel. Built as a personal portfolio project.</div></footer>
+</body>
+</html>
