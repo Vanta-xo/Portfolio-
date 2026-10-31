@@ -1,0 +1,55 @@
+:root{--ink:#0f1c2e;--muted:#4a5a6e;--bg:#f2f5f7;--panel:#ffffff;--accent:#0b7a75;--accent-d:#085c58;--line:#d5dde4;--signal:#e0a030}
+@media (prefers-color-scheme:dark){:root{--ink:#e8eef4;--muted:#9fb0c2;--bg:#0c1622;--panel:#122033;--accent:#3cc4bb;--accent-d:#7fe0d9;--line:#24384f;--signal:#f0b84a}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:"Bricolage Grotesque","Public Sans",system-ui,sans-serif;line-height:1.1;margin:0 0 .5em;letter-spacing:-.01em}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+header.site{border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;flex-wrap:wrap}
+.logo{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.6rem;color:var(--ink);text-decoration:none}
+.logo span{color:var(--accent)}
+nav ul{list-style:none;display:flex;gap:28px;margin:0;padding:0}
+nav a{color:var(--muted);text-decoration:none;font-weight:500;padding:6px 0;border-bottom:2px solid transparent}
+nav a:hover,nav a[aria-current="page"]{color:var(--ink);border-color:var(--accent)}
+.btn{display:inline-block;padding:12px 24px;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--accent);background:var(--accent);color:#fff;font-size:1rem;cursor:pointer;font-family:inherit}
+@media (prefers-color-scheme:dark){.btn{color:#04201e}}
+.btn:hover{background:var(--accent-d);border-color:var(--accent-d)}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn.ghost:hover{background:var(--accent);color:#fff}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:72px 0 88px}
+.hero h1{font-size:clamp(2.4rem,6vw,4rem);font-weight:800}
+.hero h2{font-size:clamp(1.3rem,3vw,1.7rem);color:var(--muted);font-weight:700}
+.hero p{max-width:52ch;color:var(--muted)}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.portrait{aspect-ratio:4/5;max-width:400px;width:100%;margin-left:auto;border-radius:12px;background:var(--panel);border:1px solid var(--line);display:grid;place-items:center;position:relative;overflow:hidden}
+.portrait img{width:100%;height:100%;object-fit:cover;display:block}
+.portrait .term{position:absolute;left:16px;right:16px;bottom:16px;background:#0f1c2e;color:#bff3ee;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.85rem;padding:12px 14px;border-radius:8px;line-height:1.5}
+.term b{color:var(--signal);font-weight:600}
+main section{padding:56px 0;border-top:1px solid var(--line)}
+.page-title{padding:64px 0 24px}
+.page-title h1{font-size:clamp(2rem,5vw,3rem)}
+.page-title p{color:var(--muted);max-width:60ch}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.prose p{max-width:62ch}
+.skills{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:10px}
+.skills li{border:1px solid var(--line);background:var(--panel);padding:6px 14px;border-radius:999px;font-size:.95rem}
+.timeline{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--accent)}
+.timeline li{margin-bottom:26px;position:relative}
+.timeline li::before{content:"";position:absolute;left:-30px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.timeline h3{font-size:1.1rem;margin-bottom:2px}
+.timeline small{color:var(--muted)}
+form{display:grid;gap:18px;max-width:560px}
+label{font-weight:600;display:grid;gap:6px}
+input,textarea{font:inherit;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink)}
+textarea{min-height:150px;resize:vertical}
+.contact-list{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.contact-list span{display:block;color:var(--muted);font-size:.9rem}
+.social{display:flex;gap:12px;margin-top:20px}
+.social a{width:44px;height:44px;border-radius:50%;border:2px solid var(--accent);display:grid;place-items:center;font-weight:700;text-decoration:none;font-size:.9rem}
+.social a:hover{background:var(--accent);color:#fff}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}
+@media (max-width:800px){.hero,.grid2{grid-template-columns:1fr}.portrait{margin:0;max-width:320px}.hero{padding:40px 0 56px}nav ul{gap:18px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
